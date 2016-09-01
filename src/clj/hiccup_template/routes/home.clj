@@ -2,11 +2,11 @@
   (:require [hiccup-template.layout :as layout]
             [compojure.core :refer [defroutes GET]]
             [ring.util.http-response :as response]
-            [clojure.java.io :as io]))
+            [clojure.java.io :as io]
+            [hiccup-template.views.home :as view]))
 
 (defn home-page []
-  (layout/render
-    "home.html" {:docs (-> "docs/docs.md" io/resource slurp)}))
+  (view/page))
 
 (defn about-page []
   (layout/render "about.html"))

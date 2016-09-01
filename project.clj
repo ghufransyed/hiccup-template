@@ -6,6 +6,7 @@
   :dependencies [[luminus-log4j "0.1.3"]
                  [org.clojure/clojure "1.8.0"]
                  [selmer "1.0.6"]
+                 [hiccup "1.0.5"]
                  [markdown-clj "0.9.89"]
                  [ring-middleware-format "0.7.0"]
                  [metosin/ring-http-response "0.7.0"]
